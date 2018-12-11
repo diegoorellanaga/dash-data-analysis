@@ -340,7 +340,7 @@ def plot_graph_column(n_clicks,x_value,filter_value):
                         'layout': go.Layout(
                             title ='Crimes by {0} filteres by {1}'.format(x_value,filter_value),  
                             xaxis={'title': '{0}'.format(x_value)},
-                            yaxis={'title': 'Crimes'},
+                            yaxis={'title': 'Crimes','automargin':True},
                             margin={'l': 40, 'b': 40, 't': 40, 'r': 40},
                             legend={'x': 0, 'y': 1},
                             hovermode='closest'
@@ -366,7 +366,7 @@ def plot_graph_column(n_clicks,x_value,filter_value):
                         'layout': go.Layout(
                             title ='Crimes by {0}'.format(x_value),    
                             xaxis={'title': '{0}'.format(x_value)},
-                            yaxis={'title': 'Crimes'},
+                            yaxis={'title': 'Crimes','automargin':True},
                             margin={'l': 40, 'b': 40, 't': 40, 'r': 40},
                             legend={'x': 0, 'y': 1},
                             hovermode='closest'
